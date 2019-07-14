@@ -27,8 +27,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable MCANONICALDISPLAYNAME = new HookVariable(
             "MCANONICALDISPLAYNAME",
-            "aL"
-    );
+            "aM"
+    );  // aL
 
     // ===========================================================================
 
@@ -43,8 +43,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable STORY_ADVANCER_DISPLAY_STATE = new HookVariable(
             "STORY_ADVANCER_DISPLAY_STATE",
-            "f"
-    );
+            "i"
+    );  // f
 
     // ===========================================================================
 
@@ -59,13 +59,13 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable SNAP_IS_ZIPPED = new HookVariable(
             "SNAP_IS_ZIPPED",
-            "aJ"
-    );
+            "aK"
+    );  // aJ
 
     // ===========================================================================
 
     /**
-     * Class: ansy (rbi)
+     * Class: amuy (ansy)
      * <p>
      *     Code Chunk:
      *     <code>
@@ -75,8 +75,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable SENT_MEDIA_TIMESTAMP = new HookVariable(
             "SENT_MEDIA_TIMESTAMP",
-            "bE"
-    );
+            "bT"
+    );  // bE
 
     // ===========================================================================
 
@@ -95,8 +95,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable SENT_MEDIA_BITMAP = new HookVariable(
             "SENT_MEDIA_BITMAP",
-            "aF"
-    );
+            "P"
+    );  // aF
 
     // ===========================================================================
 
@@ -115,8 +115,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable SENT_MEDIA_VIDEO_URI = new HookVariable(
             "SENT_MEDIA_VIDEO_URI",
-            "aO"
-    );
+            "ba"
+    ); // aO
 
     /**
      * Class: {@link HookClassDef#SENT_BATCHED_VIDEO}
@@ -146,8 +146,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable SENT_MEDIA_BATCH_DATA = new HookVariable(
             "SENT_MEDIA_BATCH_DATA",
-            "cf"
-    );
+            "cx"
+    );  // cf
 
     // ===========================================================================
 
@@ -169,7 +169,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
     );
 
     /**
-     * Class: smu
+     * Class: tfz (smu)
      * <p>
      *     Code Chunk:
      *     <code>
@@ -228,7 +228,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      * <p>
      *     Code Chunk:
      *     <code>
-     *         private final SnapCaptionView _var_;
+     *         private final EditText _var_;
      *     </code>
      * </p>
      */
@@ -267,8 +267,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable STORY_ADVANCER_METADATA = new HookVariable(
             "STORY_ADVANCER_METADATA",
-            "c"
-    );
+            "f"
+    );  // c
 
     // ===========================================================================
 
@@ -284,13 +284,13 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable CHAT_SAVING_LINKER = new HookVariable(
             "CHAT_SAVING_LINKER",
-            "B"
-    );
+            "H"
+    );  // B
 
     // ===========================================================================
 
     /**
-     * Class: ahsr (Type of {@link #CHAT_SAVING_LINKER})
+     * Class: ahvp (Type of {@link #CHAT_SAVING_LINKER})
      * <p>
      *     Code Chunk:
      *     <code>
@@ -325,13 +325,13 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable BATCHED_MEDIA_LIST = new HookVariable(
             "BATCHED_MEDIA_LIST",
-            "aK"
-    );
+            "aX"
+    );  // aK
 
     // ===========================================================================
 
     /**
-     * Class: ancp
+     * Class: amfi
      * <p>
      *     Code Chunk:
      *     <code>
@@ -368,8 +368,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable LENS_CATEGORY_MAP = new HookVariable(
             "LENS_CATEGORY_MAP",
-            "a"
-    );
+            "b"
+    );  // a
 
     // ===========================================================================
 
@@ -388,7 +388,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
     // ===========================================================================
 
     /**
-     * Class: apgz (sof) ( = _cls_)
+     * Class: aoht (apgz) ( = _cls_)
      * <p>
      *     Code Chunk:
      *     <code>
@@ -453,7 +453,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
     // ===========================================================================
 
     /**
-     * Class: ankr (qtg)
+     * Class: amnh (ankr)
      * <p>
      *     Code Chunk:
      *     <code>
@@ -469,7 +469,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
     // ===========================================================================
 
     /**
-     * Class: aunb (xig)
+     * Class: atbt (aunb)
      * <p>
      *     Code Chunk:
      *     <code>
@@ -511,8 +511,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable CHAT_TOP_PANEL_VIEW = new HookVariable(
             "CHAT_TOP_PANEL_VIEW",
-            "o"
-    );
+            "n"
+    );  // o
 
     // ===========================================================================
 
@@ -528,8 +528,8 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
      */
     public static final HookVariable STORY_COLLECTION_MAP = new HookVariable(
             "STORY_COLLECTION_MAP",
-            "c"
-    );
+            "e"
+    );  // c
 
     // ===========================================================================
 
@@ -550,7 +550,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
     // ===========================================================================
 
     /**
-     * Class: annh (qvs)
+     * Class: ampq (annh)
      * <p>
      *     Code Chunk:
      *     <code>

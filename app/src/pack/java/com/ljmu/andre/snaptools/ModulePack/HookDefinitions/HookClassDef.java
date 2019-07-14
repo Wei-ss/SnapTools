@@ -11,14 +11,16 @@ import com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.HookClas
  * Hook Generation | Contains: Classes, Methods/Constructors, Variables
  * ===========================================================================
  */
+// 10.52 hooks
+// Older hooks are from 10.41.6.0
 @SuppressWarnings({"WeakerAccess"})
 public class HookClassDef extends ConstantDefiner<HookClass> {
     public static final HookClassDef INST = new HookClassDef();
 
     public static final HookClass SCREENSHOT_DETECTOR = new HookClass(
             "SCREENSHOT_DETECTOR",
-            "aplj"
-    ); // ssr
+            "aolu"
+    ); // aplj
     //    public static final HookClass SNAP_DATA_JSON = new HookClass(
 //            "SNAP_DATA_JSON",
 //            "umf"
@@ -29,104 +31,105 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
     ); // com.snap.opera.shared.view.TextureVideoView
     public static final HookClass SNAP_COUNTDOWN_CONTROLLER = new HookClass(
             "SNAP_COUNTDOWN_CONTROLLER",
-            "anaq"
-    ); // qiu
+            "amdl"
+    ); // anaq
     public static final HookClass ENCRYPTION_ALGORITHM = new HookClass(
             "ENCRYPTION_ALGORITHM",
             "com.snapchat.android.framework.crypto.CbcEncryptionAlgorithm"
     ); // com.snapchat.android.framework.crypto.CbcEncryptionAlgorithm
     public static final HookClass ENCRYPTED_STREAM_BUILDER = new HookClass(
             "ENCRYPTED_STREAM_BUILDER",
-            "aoxn"
-    ); // sfo
+            "anyg"
+    ); // aoxn
     public static final HookClass STORY_METADATA = new HookClass(
             "STORY_METADATA",
-            "svq"
-    ); // cez
+            "tpu"
+    ); // svq
     public static final HookClass SNAP_BASE = new HookClass(
             "SNAP_BASE",
-            "aisv"
-    ); // mph
+            "aitc"
+    ); // aisv
     public static final HookClass SNAP_STATUS = new HookClass(
             "SNAP_STATUS",
-            "aisv$a"
-    ); // mph$a
+            "aitc$a"
+    ); // aisv$a
     public static final HookClass RECEIVED_SNAP = new HookClass(
             "RECEIVED_SNAP",
-            "antc"
-    ); // rbl
+            "amvc"
+    ); // antc
     public static final HookClass RECEIVED_SNAP_ENCRYPTION = new HookClass(
             "RECEIVED_SNAP_ENCRYPTION",
-            "aiue"
-    ); // mqt
+            "aiul"
+    ); // aiue
     public static final HookClass RECEIVED_SNAP_PAYLOAD_BUILDER = new HookClass(
             "RECEIVED_SNAP_PAYLOAD_BUILDER",
-            "zly"
-    ); // dys
+            "abjg"
+    ); // zly
     public static final HookClass STORY_SNAP_PAYLOAD_BUILDER = new HookClass(
             "STORY_SNAP_PAYLOAD_BUILDER",
-            "zxm"
-    ); // ejj
+            "abtm"
+    ); // zxm
     public static final HookClass GROUP_SNAP_METADATA = new HookClass(
             "GROUP_SNAP_METADATA",
-            "aicy"
-    ); // mai
+            "aidy"
+    ); // aicy
     public static final HookClass GROUP_SNAP_WRAPPER = new HookClass(
             "GROUP_SNAP_WRAPPER",
-            "svq"
+            "tpu"
+	   // svq
     ); // Parent of result type of HookDef#GROUP_GET_ALGORITHM
     public static final HookClass STORY_SNAP = new HookClass(
             "STORY_SNAP",
-            "ankl"
-    ); // qta
+            "amnb"
+    ); // ankl
     public static final HookClass STORY_STATUS_UPDATER = new HookClass(
             "STORY_STATUS_UPDATER",
-            "zyc"
-    ); // ejw
+            "abtz"
+    ); // zyc
     public static final HookClass STORY_METADATA_LOADER = new HookClass(
             "STORY_METADATA_LOADER",
-            "aaic"
-    ); // eur
+            "accg"
+    ); // aaic
     public static final HookClass STORY_ADVANCER = new HookClass(
             "STORY_ADVANCER",
-            "sdl"
-    ); // buf
+            "sxu"
+    ); // sdt
     public static final HookClass SENT_IMAGE = new HookClass(
             "SENT_IMAGE",
-            "antf"
-    ); // rbp
+            "amvf"
+    ); // antf
     public static final HookClass SENT_VIDEO = new HookClass(
             "SENT_VIDEO",
-            "antt"
-    ); // rcf
+            "amvs"
+    ); // antt
     public static final HookClass SENT_BATCHED_VIDEO = new HookClass(
             "SENT_BATCHED_VIDEO",
-            "abbh"
-    ); // fql
+            "acpr"
+    ); // abbh
     public static final HookClass ENUM_BATCHED_SNAP_POSITION = new HookClass(
             "ENUM_BATCHED_SNAP_POSITION",
-            "ymq"
-    ); // ddf
+            "aajd"
+    ); // ymq
     public static final HookClass SENT_SNAP_BASE = new HookClass(
             "SENT_SNAP_BASE",
-            "ansh"
-    ); // rat
+            "amuh"
+    ); // ansh
     public static final HookClass META_DATA_BUILDER = new HookClass(
             "META_DATA_BUILDER",
-            "ajly"
-    ); // ncg
+            "ajfn"
+    ); // ajly
     public static final HookClass CHAT_IMAGE_METADATA = new HookClass(
             "CHAT_IMAGE_METADATA",
-            "aicf"
-    ); // lzv
+            "aidh"
+    ); // aicf
     public static final HookClass CHAT_VIDEO_METADATA = new HookClass(
             "CHAT_VIDEO_METADATA",
-            "aivv"
-    ); // msp
+            "aivz"
+    ); // aivv
     public static final HookClass CHAT_VIDEO = new HookClass(
             "CHAT_VIDEO",
-            "aipr"
-    ); // mmc
+            "aipx"
+    ); // aipr
     public static final HookClass NEW_CONCENTRIC_TIMERVIEW = new HookClass(
             "NEW_CONCENTRIC_TIMERVIEW",
             "com.snap.opera.view.NewConcentricTimerView"
@@ -141,52 +144,52 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
     ); // jij
     public static final HookClass ENUM_SNAP_ADVANCE_MODES = new HookClass(
             "ENUM_SNAP_ADVANCE_MODES",
-            "slz"
-    ); // cad
+            "tfe"
+    ); // slz
     public static final HookClass LENS = new HookClass(
             "LENS",
-            "afmk"
-    ); // jkk
+            "afwk"
+    ); // afmk
     public static final HookClass LENS_CATEGORY_RESOLVER = new HookClass(
             "LENS_CATEGORY_RESOLVER",
-            "afmr"
-    ); // jkr
+            "afwr"
+    ); // afmr
     public static final HookClass LENS_LOADER = new HookClass(
             "LENS_LOADER",
-            "afgg"
-    ); // jhg
+            "afsz"
+    ); // afgg
     public static final HookClass LENS_CONTEXT_HOLDER = new HookClass(
             "LENS_CONTEXT_HOLDER",
             "afmx"
     ); // jkv
     public static final HookClass LENS_CAMERA_CONTEXT_ENUM = new HookClass(
             "LENS_CAMERA_CONTEXT_ENUM",
-            "afmo"
-    ); // jko
+            "afwx"
+    ); // afmx
     public static final HookClass LENS_APPLICATION_CONTEXT_ENUM = new HookClass(
             "LENS_APPLICATION_CONTEXT_ENUM",
-            "afml"
-    ); // jkl
+            "afwl"
+    ); // afml
     public static final HookClass STORY_LOADER = new HookClass(
             "STORY_LOADER",
-            "zul"
-    ); // ees
+                "abqo"
+    ); // zul
     public static final HookClass STORY_SPONSORED = new HookClass(
             "STORY_ADVERT",
-            "esr"
-    ); // dwm // TODO NOT FOUND
+            "enh"
+    ); // esr // TODO NOT FOUND
     public static final HookClass STORY_FRIEND_RECENT = new HookClass(
             "STORY_FRIEND_RECENT",
-            "erc"
-    ); // dux // TODO: NOT FOUND
+            "elm"
+    ); // erc // TODO: NOT FOUND
     public static final HookClass STORY_FRIEND_VIEWED = new HookClass(
             "STORY_FRIEND_VIEWED",
-            "aafy"
-    ); // dud // TODO CHECK
-    public static final HookClass STORY_SNAP_AD_LOADER = new HookClass(
-            "STORY_SNAP_AD_LOADER",
-            "zwf"
-    ); // ehu
+            "acak"
+    ); // aafy // TODO CHECK
+    //public static final HookClass STORY_SNAP_AD_LOADER = new HookClass(
+    //        "STORY_SNAP_AD_LOADER",
+    //        "absg"
+    //); // zwf
     public static final HookClass FRIEND_PROFILE_POPUP_FRAGMENT = new HookClass(
             "FRIEND_PROFILE_POPUP_FRAGMENT",
             "com.snapchat.android.app.feature.miniprofile.internal.friend.FriendMiniProfilePopupFragment"
@@ -201,44 +204,46 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
     ); // com.snapchat.android.app.main.camera.CameraFragmentV1
     public static final HookClass SHARE_IMAGE = new HookClass(
             "SHARE_IMAGE",
-            "aavx"
+            "acnb"
+	   // aavx	
     ); // CAMERA_FRAGMENT
     public static final HookClass SHARE_VIDEO = new HookClass(
             "SHARE_VIDEO",
-            "aawc"
+            "acnc"
+	   // aawc	
     ); // CAMERA_FRAGMENT
     public static final HookClass ENUM_LENS_TYPE = new HookClass(
             "ENUM_LENS_TYPE",
-            "afmk$c"
-    ); // jkk$b
+            "afwk$c"
+    ); // afmk$c
     public static final HookClass LENS_CATEGORY = new HookClass(
             "LENS_CATEGORY",
-            "afmt"
-    ); // jkt
+            "afwt"
+    ); // afmt
     public static final HookClass LENS_SLUG = new HookClass(
             "LENS_SLUG",
-            "avbs"
-    ); // xet
+            "atqn"
+    ); // avbs
     public static final HookClass LENS_TRACK = new HookClass(
             "LENS_TRACK",
-            "avgb"
-    ); // xjk
+            "atux"
+    ); // avgb
     //    public static final HookClass LENS_ASSET = new HookClass(
 //            "LENS_ASSET",
 //            "qvy"
 //    );
     public static final HookClass LENS_ASSET_BUILT = new HookClass(
             "LENS_ASSET_BUILT",
-            "afmm"
-    ); // jkm
+            "afwm"
+    ); // afmm
     public static final HookClass LENS_ASSET_TYPE = new HookClass(
             "LENS_ASSET_TYPE",
-            "afmm$a"
-    ); // jkm$a
+            "afwm$a"
+    ); // afmm$a
     public static final HookClass LENS_ASSET_LOAD_MODE = new HookClass(
             "LENS_ASSET_LOAD_MODE",
-            "afnj"
-    ); // jlb
+            "afxj"
+    ); // afnj
     public static final HookClass ENUM_LENS_ACTIVATOR_TYPE = new HookClass(
             "ENUM_LENS_ACTIVATOR_TYPE",
             "com.looksery.sdk.domain.Category.ActivatorType"
@@ -253,36 +258,36 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
     ); // com.snapchat.android.app.feature.creativetools.caption.SnapCaptionView
     public static final HookClass CAPTION_MANAGER_CLASS = new HookClass(
             "CAPTION_MANAGER_CLASS",
-            "tvp"
-    ); // gau
+            "urg"
+    ); // tvp
     public static final HookClass CHAT_MESSAGE_VIEW_HOLDER = new HookClass(
             "CHAT_MESSAGE_VIEW_HOLDER",
-            "aimh"
-    ); // mje
+            "aimu"
+    ); // aimh
     public static final HookClass OPERA_PAGE_VIEW = new HookClass(
             "OPERA_PAGE_VIEW",
             "com.snap.opera.view.OperaPageView"
     ); // com.snap.opera.view.OperaPageView
     public static final HookClass CHAT_METADATA_JSON_PARSER = new HookClass(
             "CHAT_METADATA_JSON_PARSER",
-            "auij"
-    ); // wjo
+            "aswx"
+    ); // auij
     public static final HookClass CHAT_METADATA_JSON_PARSER_SECOND = new HookClass(
             "CHAT_METADATA_JSON_PARSER_SECOND",
-            "auvg"
-    ); // wxx
+            "atka"
+    ); // auvg
     public static final HookClass CHAT_METADATA = new HookClass(
             "CHAT_METADATA",
-            "auii"
-    ); // wjn
+            "asww"
+    ); // auii
     public static final HookClass CHAT_HEADER_METADATA = new HookClass(
             "CHAT_HEADER_METADATA",
-            "auqf"
-    ); // wso
+            "atex"
+    ); // auqf
     public static final HookClass CHAT_BODY_METADATA = new HookClass(
             "CHAT_BODY_METADATA",
-            "auuq"
-    ); // wxa
+            "atjk"
+    ); // auuq
 //    public static final HookClass GEOFILTER_VIEW = new HookClass(
 //            "GEOFILTER_VIEW",
 //            "com.snapchat.android.app.shared.feature.preview.ui.smartfilters.geofilterview.GeofilterView2"
@@ -313,80 +318,81 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 //    ); // fdr // TODO: DONE
     public static final HookClass CHAT_NOTIFICATION_CREATOR = new HookClass(
             "CHAT_NOTIFICATION_CREATOR",
-            "ahnj"
-    ); // lmq
+            "ahqt"
+    ); // ahnj
     public static final HookClass NETWORK_MANAGER = new HookClass(
             "NETWORK_MANAGER",
-            "apbv"
-    ); // sjv
+            "aocq"
+    ); // apbv
     /**
      * Hooking the {@link HookDef#NETWORK_EXECUTE_SYNC} method leads to an Exception in this
      * Runnable. We hook and suppress this exception
      */
     public static final HookClass DOWNLOADER_RUNNABLE = new HookClass(
             "DOWNLOADER_RUNNABLE",
-            "apeh$2"
+            "aofe$2"
+	   // apeh$2
     );
     public static final HookClass NETWORK_DISPATCHER = new HookClass(
             "NETWORK_DISPATCHER",
-            "ahql"
-    ); // lpo
+            "ahtj"
+    ); // ahql
     //    public static final HookClass CHAT_MESSAGE_METADATA = new HookClass(
 //            "CHAT_MESSAGE_METADATA",
 //            "ktw"
 //    );
     public static final HookClass CHAT_GROUP_VIEW_MARKER = new HookClass(
             "CHAT_GROUP_VIEW_MARKER",
-            "ahsh"
-    ); // lrk
+            "ahvf"
+    ); // ahsh
     public static final HookClass CHAT_DIRECT_VIEW_MARKER = new HookClass(
             "CHAT_DIRECT_VIEW_MARKER",
-            "ahrf"
-    ); // lqg
+            "ahuc"
+    ); // ahrf
     //    public static final HookClass CHAT_V3_FRAGMENT = new HookClass(
 //            "CHAT_V3_FRAGMENT",
 //            "com.snapchat.android.app.feature.messaging.chat.fragment.ChatV3Fragment"
 //    ); // com.snapchat.android.app.feature.messaging.chat.fragment.ChatV3Fragment
     public static final HookClass CHAT_V10_BUILDER = new HookClass(
             "CHAT_V10_BUILDER",
-            "ahvq"
-    ); // luf
+            "ahyf"
+    ); // ahvq
     public static final HookClass CHEETAH_PROFILE_SETTINGS_CREATOR = new HookClass(
             "CHEETAH_PROFILE_SETTINGS_CREATOR",
-            "aeiu"
-    ); // irw
+            "afdi"
+    ); // aeiu
     public static final HookClass AB_TEST_MANAGER = new HookClass(
             "AB_TEST_MANAGER",
-            "apqw"
-    ); // btd
+            "aoqz"
+    ); // apqw
     public static final HookClass EXPERIMENT_BASE = new HookClass(
             "EXPERIMENT_BASE",
-            "apqt"
-    ); // bsz
+            "aoqw"
+    ); // apqt
     public static final HookClass STORY_MANAGER = new HookClass(
             "STORY_MANAGER",
-            "aadm"
-    ); // eoa
+            "abyg"
+    ); // aadm
     public static final HookClass STORY_DATA_DISCOVER = new HookClass(
             "STORY_DATA_DISCOVER",
-            "ivb"
-    ); // aazh
+            "irc"
+    ); // ivb
     public static final HookClass STORY_DATA_DYNAMIC = new HookClass(
             "STORY_DATA_DYNAMIC",
-            "ivc"
-    ); // aazi
+            "ird"
+    ); // ivc
     public static final HookClass STORY_DATA_MAP = new HookClass(
             "STORY_DATA_MAP",
-            "ivd"
-    ); // aazj
+            "ire"
+    ); // ird
     public static final HookClass STORY_DATA_PROMOTED = new HookClass(
             "STORY_DATA_PROMOTED",
-            "ive"
-    ); // aazk
+            "irf"
+    ); // ive
     public static final HookClass STORY_DATA_MOMENT = new HookClass(
             "STORY_DATA_MOMENT",
-            "ivr"
-    ); // aazu
+            "irq"
+    ); // ivr
 
     public static class HookClass extends Constant {
         private String strClass;

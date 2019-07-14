@@ -7,6 +7,7 @@ import com.ljmu.andre.snaptools.Fragments.FragmentHelper;
 import com.ljmu.andre.snaptools.Utils.XposedUtils.ST_MethodHook;
 
 import de.robv.android.xposed.XC_MethodHook.MethodHookParam;
+import de.robv.android.xposed.XC_MethodReplacement;
 import timber.log.Timber;
 
 import static com.ljmu.andre.GsonPreferences.Preferences.getPref;
@@ -90,6 +91,16 @@ public class ForcedHooks extends ModuleHelper {
 //				}
 //		);
 
+        /**
+         * ===========================================================================
+         * TEST Force disables Alpha UI
+         * ===========================================================================
+         */
+          findAndHookMethod(
+                "ytp", snapClassLoader,
+                "e", XC_MethodReplacement.returnConstant("snapchat")
+        );
+
         //Forced Chronological Friends Feed
 //		findAndHookMethod(
 //				"ifj", snapClassLoader,
@@ -119,8 +130,8 @@ public class ForcedHooks extends ModuleHelper {
 //			experimentDebugHook = this::handleExperimentPrinting;
 
         findAndHookMethod(
-                "aqkk", snapClassLoader,
-                "a", findClass("aqkl", snapClassLoader), Object.class,
+                "apjy", snapClassLoader,
+                "a", findClass("apjz", snapClassLoader), Object.class,
                 new HookWrapper(
                         param -> {
                             String key = (String) callMethod(param.args[0], "a");

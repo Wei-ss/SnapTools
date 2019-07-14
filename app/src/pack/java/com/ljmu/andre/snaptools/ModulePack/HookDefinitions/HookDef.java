@@ -71,7 +71,7 @@ import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.S
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_METADATA;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_METADATA_LOADER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_SNAP;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_SNAP_AD_LOADER;
+//import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_SNAP_AD_LOADER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_SNAP_PAYLOAD_BUILDER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_STATUS_UPDATER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.TEXTURE_VIDEO_VIEW;
@@ -91,8 +91,8 @@ public class HookDef extends ConstantDefiner<Hook> {
     ); // TODO
     public static final Hook STREAM_TYPE_CHECK_BYPASS = new Hook(
             "STREAM_TYPE_CHECK_BYPASS",
-            ENCRYPTED_STREAM_BUILDER, "a", "ws", int.class, int.class
-    );
+            ENCRYPTED_STREAM_BUILDER, "a", "zq", int.class, int.class
+    ); // ws
     public static final Hook STORY_GET_ALGORITHM = new Hook(
             "STORY_GET_ALGORITHM",
             STORY_SNAP, "ar"
@@ -111,12 +111,12 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook CHAT_VIDEO_PATH = new Hook(
             "CHAT_VIDEO_PATH",
-            CHAT_VIDEO, "eG_"
-    );
+            CHAT_VIDEO, "eX_"
+    );  // eG_
     public static final Hook GROUP_GET_ALGORITHM = new Hook(
             "GROUP_GET_ALGORITHM",
-            GROUP_SNAP_METADATA, "a", "aisw"
-    );
+            GROUP_SNAP_METADATA, "a", "aitd"
+    );  // aisw
     public static final Hook GROUP_ALGORITHM_UNWRAPPED = new Hook(
             "GROUP_ALGORITHM_UNWRAPPED",
             GROUP_SNAP_WRAPPER, "a", String.class
@@ -157,19 +157,19 @@ public class HookDef extends ConstantDefiner<Hook> {
     // SHARING ===================================================================
     public static final Hook REPLACE_SHARED_IMAGE = new Hook(
             "REPLACE_SHARED_IMAGE",
-            SHARE_IMAGE, "a", Bitmap.class, Integer.class, String.class, long.class, boolean.class, int.class, "fno$b"
-    ); // TODO: CHECK SHARING
+            SHARE_IMAGE, "a", "fjx", Integer.class, String.class, long.class, boolean.class, int.class, "fjw$b"
+    ); // TODO: CHECK SHARING fno$b
     public static final Hook REPLACE_SHARED_VIDEO = new Hook(
             "REPLACE_SHARED_VIDEO",
-            SHARE_VIDEO, "a", Uri.class, int.class, boolean.class, "aqmy", long.class, long.class
-    ); // TODO: CHECK SHARING
+            SHARE_VIDEO, "a", Uri.class, int.class, boolean.class, "apmn", long.class, long.class
+    ); // TODO: CHECK SHARING aqmy
     public static final Hook BATCHED_MEDIA_LIMITER = new Hook(
             "BATCHED_MEDIA_LIMITER",
-            SENT_VIDEO, "aV"
-    );
+            SENT_VIDEO, "bi"
+    );  // aV
     public static final Hook CAMERA_IS_VISIBLE = new Hook(
             "CAMERA_IS_VISIBLE",
-            CAMERA_FRAGMENT, "a", "asfe"
+            CAMERA_FRAGMENT, "a", "aqtb"
     );
     // ===========================================================================
 
@@ -184,16 +184,16 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook CHECK_LENS_CATEGORY_AUTH = new Hook(
             "CHECK_LENS_CATEGORY_AUTH",
-            LENS_AUTHENTICATION, "a", "afmq", String.class
-    );
+            LENS_AUTHENTICATION, "a", "afwq", String.class
+    );  // afmq
     public static final Hook CHECK_LENS_ASSET_AUTH = new Hook(
             "CHECK_LENS_ASSET_AUTH",
-            LENS_AUTHENTICATION, "a", "afmm", String.class
-    );
+            LENS_AUTHENTICATION, "a", "afwm", String.class
+    );  // afmm
     public static final Hook RESOLVE_LENS_CATEGORY = new Hook(
             "RESOLVE_LENS_CATEGORY",
             LENS_CATEGORY_RESOLVER, "a", String.class
-    );
+    );  // b
 
     // ===========================================================================
 
@@ -202,10 +202,10 @@ public class HookDef extends ConstantDefiner<Hook> {
             "LOAD_STORIES",
             STORY_LOADER, "a", List.class
     );
-    public static final Hook LOAD_STORY_SNAP_ADVERT = new Hook(
-            "LOAD_STORY_SNAP_ADVERT",
-            STORY_SNAP_AD_LOADER, "a", STORY_SNAP_AD_LOADER.getStrClass(), "eyr"
-    );
+    //public static final Hook LOAD_STORY_SNAP_ADVERT = new Hook(
+    //        "LOAD_STORY_SNAP_ADVERT",
+    //        STORY_SNAP_AD_LOADER, "a", STORY_SNAP_AD_LOADER.getStrClass(), "eud"
+    //); // eyr
     public static final Hook FRIEND_STORY_TILE_USERNAME = new Hook(
             "FRIEND_STORY_TILE_USERNAME",
             STORY_FRIEND_VIEWED, "a"
@@ -220,8 +220,8 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook LOAD_NEW_STORY = new Hook(
             "LOAD_NEW_STORY",
-            STORY_MANAGER, "a", "anju"
-    );
+            STORY_MANAGER, "a", "abyg"
+    );  // aadm
     // ===========================================================================
 
     // CHAT MANAGER ===============================================================
@@ -241,27 +241,27 @@ public class HookDef extends ConstantDefiner<Hook> {
     public static final Hook CHAT_METADATA_WRITE_SECOND = new Hook(
             "CHAT_METADATA_WRITE_SECOND",
             CHAT_METADATA_JSON_PARSER_SECOND, "a", "com.google.gson.stream.JsonWriter",
-            "auvf"
-    );
+            "atjz"
+    ); // auvf
     public static final Hook CHAT_MESSAGE_VIEW_MEASURE = new Hook(
             "CHAT_MESSAGE_VIEW_MEASURE",
             CHAT_MESSAGE_VIEW_HOLDER, "F"
     );
     /**
-     * Class: aioq (mlk)
+     * Class: aipa (aioq)
      */
     public static final Hook CHAT_ISSAVED_INAPP = new Hook(
             "CHAT_ISSAVED_INAPP",
-            null, "eq_"
-    );
+            null, "eG_"
+    ); // eG_
     public static final Hook CHAT_SAVE_INAPP = new Hook(
             "CHAT_SAVE_INAPP",
             CHAT_MESSAGE_VIEW_HOLDER, "x"
     );
     public static final Hook CHAT_NOTIFICATION = new Hook(
             "CHAT_NOTIFICATION",
-            CHAT_NOTIFICATION_CREATOR, "a", "apgz", "apgs"
-    );
+            CHAT_NOTIFICATION_CREATOR, "a", "aoht", "com.snapchat.android.core.notification.model.NotificationProcessorCallback"
+    ); // apgz apgs
 
     // SCREENSHOT BYPASS =========================================================
     public static final Hook SCREENSHOT_BYPASS = new Hook(
@@ -328,7 +328,7 @@ public class HookDef extends ConstantDefiner<Hook> {
     // STEALTH VIEWING ===========================================================
     public static final Hook GET_SNAP_ID = new Hook(
             "GET_SNAP_ID",
-            SNAP_BASE, "g"
+            SNAP_BASE, "G"
     );
     public static final Hook SET_SNAP_STATUS = new Hook(
             "SET_SNAP_STATUS",
@@ -336,8 +336,8 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook MARK_STORY_VIEWED = new Hook(
             "MARK_STORY_VIEWED",
-            STORY_STATUS_UPDATER, "a", "anju", STORY_SNAP.getStrClass(), boolean.class
-    );
+            STORY_STATUS_UPDATER, "a", "ammk", STORY_SNAP.getStrClass(), boolean.class
+    ); // anju
     public static final Hook GET_RECEIVED_SNAP_PAYLOAD = new Hook(
             "GET_RECEIVED_SNAP_PAYLOAD",
             RECEIVED_SNAP_PAYLOAD_BUILDER, "getRequestPayload"
@@ -361,24 +361,24 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook DISPATCH_CHAT_UPDATE = new Hook(
             "DISPATCH_CHAT_UPDATE",
-            NETWORK_DISPATCHER, "a", "aiqy", "aukc"
-    );
+            NETWORK_DISPATCHER, "a", "aire", "asys"
+    ); // aiqy aukc
     //    public static final Hook MARK_CHAT_VIEWED = new Hook(
 //            "MARK_CHAT_VIEWED",
 //            CHAT_MESSAGE_METADATA, "b", long.class
 //    );
     public static final Hook MARK_GROUP_CHAT_VIEWED = new Hook(
             "MARK_GROUP_CHAT_VIEWED",
-            CHAT_GROUP_VIEW_MARKER, "a", "aiqy", String.class
-    );
+            CHAT_GROUP_VIEW_MARKER, "a", "aire", String.class
+    ); // aiqy
     public static final Hook MARK_DIRECT_CHAT_VIEWED_PRESENT = new Hook(
             "MARK_DIRECT_CHAT_VIEWED_PRESENT",
-            CHAT_DIRECT_VIEW_MARKER, "a", "aipd", "apzn"
-    );
+            CHAT_DIRECT_VIEW_MARKER, "a", "aipj", "aoyz"
+    ); // aipd apzn
     public static final Hook MARK_DIRECT_CHAT_VIEWED_UNPRESENT = new Hook(
             "MARK_DIRECT_CHAT_VIEWED_UNPRESENT",
-            CHAT_DIRECT_VIEW_MARKER, "b", "apzn", "aipd"
-    );
+            CHAT_DIRECT_VIEW_MARKER, "b", "aipj", "aoyz"
+    ); // aipd apzn
     //    public static final Hook CHAT_V3_FRAGMENT_CREATED = new Hook(
 //            "CHAT_V3_FRAGMENT_CREATED",
 //            CHAT_V3_FRAGMENT, "onCreateView", LayoutInflater.class, ViewGroup.class, Bundle.class
@@ -418,20 +418,20 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook SNAP_GET_TIMESTAMP = new Hook(
             "SNAP_GET_TIMESTAMP",
-            STORY_SNAP, "aF_"
-    );
+            STORY_SNAP, "az_"
+    );  // aF_
     public static final Hook SNAP_GET_MEDIA_TYPE = new Hook(
             "SNAP_GET_MEDIA_TYPE",
-            SNAP_BASE, "bb_"
-    );
+            SNAP_BASE, "aU_"
+    ); // bb_
     public static final Hook STORY_METADATA_GET_OBJECT = new Hook(
             "STORY_METADATA_GET_OBJECT",
             STORY_METADATA, "a", String.class
     );
     public static final Hook STORY_METADATA_BUILDER = new Hook(
             "STORY_METADATA_BUILDER",
-            STORY_METADATA_LOADER, "a", STORY_SNAP.getStrClass(), "apkx", "apkw", "ankk"
-    );
+            STORY_METADATA_LOADER, "a", STORY_SNAP.getStrClass(), "aoli", "aolh", "amna"
+    );  // apkx apkw ankk
     public static final Hook STORY_DISPLAYED = new Hook(
             "STORY_DISPLAYED",
             STORY_ADVANCER, "F"
@@ -450,8 +450,8 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook GET_USERNAME = new Hook(
             "GET_USERNAME",
-            USER_PREFS, "N"
-    );
+            USER_PREFS, "w"
+    );  // N
 
     // CONSTRUCTORS ==============================================================
 
