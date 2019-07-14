@@ -8,28 +8,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-def keystorePropertiesFile = file("..\\KeysCertificates\\KeyStore\\keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-
 android {
-
-    signingConfigs {
-        release {
-            // "MKey..." --> MasterKey
-            keyAlias keystoreProperties['MKeyAlias']
-            keyPassword keystoreProperties['MKeyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
-        debug {
-            // "DKey..." --> DebugKey
-            keyAlias keystoreProperties['DKeyAlias']
-            keyPassword keystoreProperties['DKeyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
-    }
 
     flavorDimensions "defaultConfig"
 
@@ -77,11 +56,9 @@ android {
 
     buildTypes {
         debug {
-            signingConfig signingConfigs.debug
             debuggable true
         }
         release {
-            signingConfig signingConfigs.release
         }
     }
     compileOptions {
