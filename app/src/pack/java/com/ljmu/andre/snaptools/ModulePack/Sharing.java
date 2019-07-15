@@ -18,10 +18,12 @@ import com.ljmu.andre.snaptools.Utils.ContextHelper;
 import com.ljmu.andre.snaptools.Utils.XposedUtils.ST_MethodHook;
 
 import java.io.File;
+import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
 
 import de.robv.android.xposed.XC_MethodReplacement;
+import de.robv.android.xposed.XposedHelpers;
 import timber.log.Timber;
 
 import static com.ljmu.andre.GsonPreferences.Preferences.getPref;
@@ -190,7 +192,10 @@ public class Sharing extends ModuleHelper {
                                 return;
                             }
 
-                            param.args[0] = bitmap;
+                            // TODO: Put fjx$a in a variable somewhere.
+                            param.args[0] = XposedHelpers
+                                    .findConstructorExact("fjx$a", snapClassLoader, Bitmap.class)
+                                    .newInstance(bitmap);
                         }
                     }
                 }
