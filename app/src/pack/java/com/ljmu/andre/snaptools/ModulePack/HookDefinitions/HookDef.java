@@ -220,8 +220,8 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook LOAD_NEW_STORY = new Hook(
             "LOAD_NEW_STORY",
-            STORY_MANAGER, "a", "abyg"
-    );  // aadm
+            STORY_MANAGER, "a", "ammk"
+    );  // anju
     // ===========================================================================
 
     // CHAT MANAGER ===============================================================
@@ -328,7 +328,7 @@ public class HookDef extends ConstantDefiner<Hook> {
     // STEALTH VIEWING ===========================================================
     public static final Hook GET_SNAP_ID = new Hook(
             "GET_SNAP_ID",
-            SNAP_BASE, "G"
+            SNAP_BASE, "T"
     );
     public static final Hook SET_SNAP_STATUS = new Hook(
             "SET_SNAP_STATUS",

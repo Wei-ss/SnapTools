@@ -96,10 +96,10 @@ public class ForcedHooks extends ModuleHelper {
          * TEST Force disables Alpha UI
          * ===========================================================================
          */
-          findAndHookMethod(
-                "ytp", snapClassLoader,
-                "e", XC_MethodReplacement.returnConstant("snapchat")
-        );
+//          findAndHookMethod(
+//                "ytp", snapClassLoader,
+//                "e", XC_MethodReplacement.returnConstant("snapchat")
+//        );
 
         //Forced Chronological Friends Feed
 //		findAndHookMethod(
